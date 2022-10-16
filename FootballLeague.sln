@@ -3,7 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FootballLeague", "FootballLeague\FootballLeague.csproj", "{9B6EA7E4-EBED-49CD-BF7E-3CEC278D360E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FootballLeague", "FootballLeague\FootballLeague.csproj", "{9B6EA7E4-EBED-49CD-BF7E-3CEC278D360E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FootballLeague.Domain", "FootballLeague.Domain\FootballLeague.Domain.csproj", "{2397BF94-3CD7-457B-82E2-6414CA687799}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FootballLeague.Data", "FootballLeague.Data\FootballLeague.Data.csproj", "{F2074896-0D36-45A3-8AD0-E555E0871723}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FootballLeague.Services", "FootballLeague.Services\FootballLeague.Services.csproj", "{0C601783-E813-48DB-A98C-5C31C435BBBB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2397BF94-3CD7-457B-82E2-6414CA687799} = {2397BF94-3CD7-457B-82E2-6414CA687799}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +24,18 @@ Global
 		{9B6EA7E4-EBED-49CD-BF7E-3CEC278D360E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B6EA7E4-EBED-49CD-BF7E-3CEC278D360E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B6EA7E4-EBED-49CD-BF7E-3CEC278D360E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2397BF94-3CD7-457B-82E2-6414CA687799}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2397BF94-3CD7-457B-82E2-6414CA687799}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2397BF94-3CD7-457B-82E2-6414CA687799}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2397BF94-3CD7-457B-82E2-6414CA687799}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2074896-0D36-45A3-8AD0-E555E0871723}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2074896-0D36-45A3-8AD0-E555E0871723}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2074896-0D36-45A3-8AD0-E555E0871723}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2074896-0D36-45A3-8AD0-E555E0871723}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C601783-E813-48DB-A98C-5C31C435BBBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C601783-E813-48DB-A98C-5C31C435BBBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C601783-E813-48DB-A98C-5C31C435BBBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C601783-E813-48DB-A98C-5C31C435BBBB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
